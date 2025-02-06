@@ -8,15 +8,18 @@ import {
 import { toast } from "sonner";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAppDispatch } from "../../redux/hooks";
+import { login } from "../../redux/features/authSlice";
 
 const Login = () => {
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
   const emailRef = useRef<HTMLInputElement>(null);
   const passwordRef = useRef<HTMLInputElement>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+    dispatch(login());
     // Show success toast
     toast.success("Logged in successfully!");
 
@@ -58,7 +61,7 @@ const Login = () => {
           <p className="mb-2">UserName/Email Id</p>
           <input
             className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
-            type="text"
+            type="email"
             required
             ref={emailRef}
           />
