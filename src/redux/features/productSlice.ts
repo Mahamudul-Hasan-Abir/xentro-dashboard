@@ -5,10 +5,6 @@ interface ProductState {
   localProducts: Product[];
 }
 
-// const initialState: ProductState = {
-//   localProducts: [],
-// };
-/* Extra */
 const initialState: ProductState = {
   localProducts: JSON.parse(localStorage.getItem("localProducts") || "[]"),
 };

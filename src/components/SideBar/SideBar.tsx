@@ -18,7 +18,7 @@ const SideBar = () => {
   };
   return (
     <div
-      className={`border-r-[1px] border-gray-100 text-[#3c82f6] h-screen ${
+      className={`border-r-[1px] border-gray-100 text-[#3c82f6] md:fixed bg-white  h-screen ${
         isCollapsed ? "w-16" : "w-64"
       } transition-all duration-800 ease-in-out`}
     >
@@ -29,9 +29,7 @@ const SideBar = () => {
         </button>
       </div>
 
-      {/* Navigation Links */}
       <ul className="mt-4">
-        {/* Dashboard */}
         <Link to="/">
           <li className="p-4 hover:bg-[#eff6ff] flex items-center">
             {isCollapsed ? (
@@ -42,14 +40,12 @@ const SideBar = () => {
           </li>
         </Link>
 
-        {/* Users */}
         <Link to="/users">
           <li className="p-4 hover:bg-[#eff6ff] flex items-center">
             {isCollapsed ? <FaUsers className="size-6" /> : "Users"}
           </li>
         </Link>
 
-        {/* Products Dropdown */}
         <li>
           <button
             onClick={toggleProductsDropdown}
@@ -82,7 +78,6 @@ const SideBar = () => {
             )}
           </button>
 
-          {/* Dropdown Menu */}
           {!isCollapsed && isProductsOpen && (
             <ul className="pl-8">
               <Link to="/products">

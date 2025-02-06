@@ -71,7 +71,6 @@ const UserDetails = () => {
             </div>
           </div>
 
-          {/* Address */}
           <div className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-700">Address</h2>
             <div className="space-y-2">
@@ -126,7 +125,6 @@ const UserDetails = () => {
           </div>
         </div>
 
-        {/* Back Button */}
         <div className="mt-8 text-center">
           <button
             onClick={() => window.history.back()}

@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="container p-8 ">
+    <div className="container p-8 max-w-[800px] mx-auto">
       <div className="md:flex block justify-between items-center bg-gray-700 rounded-2xl md:p-10">
         <div className="p-5 md:w-[70%]">
           <h1 className="md:text-xl text-l font-bold mb-4 text-[#e2e8f0]">

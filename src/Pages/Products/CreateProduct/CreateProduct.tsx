@@ -73,16 +73,15 @@ const CreateProduct = () => {
   };
 
   return (
-    <div className="container flex justify-center ">
+    <div className="container flex justify-center max-w-[800px] mx-auto">
       <form
         className=" w-full m-3 p-10 border-[1px] border-[#e2e8f0] rounded-2xl"
         onSubmit={handleSubmit}
       >
-        <h1>Create Product</h1>
+        <h1 className="text-2xl font-semibold">Create Product</h1>
 
-        {/* Product Title */}
         <div className="my-4">
-          <p className="mb-2">Product Title</p>
+          <p className="mb-2 font-semibold">Product Title</p>
           <input
             className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
             type="text"
@@ -96,10 +95,9 @@ const CreateProduct = () => {
           </p>
         </div>
 
-        {/* response grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-5">
           <div>
-            <p className="mb-2">Color</p>
+            <p className="mb-2 font-semibold">Color</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -109,7 +107,7 @@ const CreateProduct = () => {
             />
           </div>
           <div>
-            <p className="mb-2">Capacity</p>
+            <p className="mb-2 font-semibold">Capacity</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -119,7 +117,7 @@ const CreateProduct = () => {
             />
           </div>
           <div>
-            <p className="mb-2">Capacity GB</p>
+            <p className="mb-2 font-semibold">Capacity GB</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -132,7 +130,7 @@ const CreateProduct = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div>
-            <p className="mb-2">Generation</p>
+            <p className="mb-2 font-semibold">Generation</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -142,7 +140,7 @@ const CreateProduct = () => {
             />
           </div>
           <div>
-            <p className="mb-2">Year</p>
+            <p className="mb-2 font-semibold">Year</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="number"
@@ -152,7 +150,7 @@ const CreateProduct = () => {
             />
           </div>
           <div>
-            <p className="mb-2">Cpu Model</p>
+            <p className="mb-2 font-semibold">Cpu Model</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -165,7 +163,7 @@ const CreateProduct = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 my-5">
           <div>
-            <p className="mb-2">Hard Disk Size</p>
+            <p className="mb-2 font-semibold">Hard Disk Size</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -175,7 +173,7 @@ const CreateProduct = () => {
             />
           </div>
           <div>
-            <p className="mb-2">Strap Colour</p>
+            <p className="mb-2 font-semibold">Strap Colour</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -185,7 +183,7 @@ const CreateProduct = () => {
             />
           </div>
           <div>
-            <p className="mb-2">Case Size</p>
+            <p className="mb-2 font-semibold">Case Size</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="text"
@@ -198,7 +196,7 @@ const CreateProduct = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           <div>
-            <p className="mb-2">Screen Size</p>
+            <p className="mb-2 font-semibold">Screen Size</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="number"
@@ -208,7 +206,7 @@ const CreateProduct = () => {
             />
           </div>
           <div>
-            <p className="mb-2">Price</p>
+            <p className="mb-2 font-semibold">Price</p>
             <input
               className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
               type="number"
@@ -220,7 +218,7 @@ const CreateProduct = () => {
         </div>
 
         <div className="my-5">
-          <p className="mb-2">Description</p>
+          <p className="mb-2 font-semibold">Description</p>
           <div className="w-full">
             <textarea
               className="w-full h-40 p-3 border-[1px] border-[#e2e8f0] rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"

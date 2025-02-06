@@ -31,7 +31,6 @@ const Login = () => {
         className="bg-white w-[500px] p-10 shadow-2xl rounded-xl"
         onSubmit={handleSubmit}
       >
-        {/* Top Part */}
         <div>
           <div className="flex justify-center py-6 gap-1 items-center">
             <img
@@ -44,7 +43,7 @@ const Login = () => {
               <span className="text-[#f3b60c]">TRO</span>
             </h1>
           </div>
-          {/* Welcome  */}
+
           <div>
             <h2 className="text-[#3b81f6] text-xl text-center pb-2 font-semibold">
               Welcome Back !
@@ -54,9 +53,8 @@ const Login = () => {
             </p>
           </div>
         </div>
-        {/* Input Part */}
+
         <div className="my-4">
-          {/* First input */}
           <p className="mb-2">UserName/Email Id</p>
           <input
             className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
@@ -66,7 +64,6 @@ const Login = () => {
           />
         </div>
         <div className="my-4">
-          {/* Second input */}
           <p className="mb-2">Password</p>
           <input
             className="w-full h-10 rounded-lg p-5  border-[#e2e8f0] border-[1px]"
@@ -91,7 +88,6 @@ const Login = () => {
           Sign In
         </button>
 
-        {/* Social Media */}
         <div className="my-10 border-b-[1px] border-dashed border-[#66768d]">
           <p className="text-center text-[#66768d]">Sign in with</p>
         </div>
